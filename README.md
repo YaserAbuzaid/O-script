@@ -119,3 +119,5 @@ python tools/os_debugger.py
 - `examples/counter.os` — small OOP example
 - `examples/checkpoint.os` — checkpoints + rollback
 - `examples/test.os` — starter template (copy/modify)
+- `examples/test2.os` — study tracker (copy/modify)
+- `examples/test3.os` — not finished yet
