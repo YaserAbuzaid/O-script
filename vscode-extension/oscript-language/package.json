@@ -1,0 +1,41 @@
+{
+  "name": "oscript-language",
+  "displayName": "O-script Language Support",
+  "description": "Syntax highlighting and snippets for the O-script (.os) time-travel OOP language.",
+  "version": "0.1.0",
+  "publisher": "local",
+  "engines": {
+    "vscode": "^1.70.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "oscript",
+        "aliases": [
+          "O-script",
+          "oscript"
+        ],
+        "extensions": [
+          ".os"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "oscript",
+        "scopeName": "source.oscript",
+        "path": "./syntaxes/oscript.tmLanguage.json"
+      }
+    ],
+    "snippets": [
+      {
+        "language": "oscript",
+        "path": "./snippets/oscript.code-snippets"
+      }
+    ]
+  }
+}

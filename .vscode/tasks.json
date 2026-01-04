@@ -1,0 +1,40 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "O-script: Run current .os file",
+      "type": "shell",
+      "command": "python",
+      "args": [
+        "${workspaceFolder}/oscript.py",
+        "${file}"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "O-script: Run current .os file (trace -> trace.json)",
+      "type": "shell",
+      "command": "python",
+      "args": [
+        "${workspaceFolder}/oscript.py",
+        "${file}",
+        "--trace",
+        "${workspaceFolder}/trace.json"
+      ],
+      "problemMatcher": []
+    },
+    {
+      "label": "O-script: Open O-script Debugger (trace viewer)",
+      "type": "shell",
+      "command": "python",
+      "args": [
+        "${workspaceFolder}/tools/os_debugger.py"
+      ],
+      "problemMatcher": []
+    }
+  ]
+}

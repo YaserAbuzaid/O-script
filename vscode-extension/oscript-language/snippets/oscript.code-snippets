@@ -1,0 +1,75 @@
+{
+  "Class": {
+    "prefix": "class",
+    "body": [
+      "class ${1:Name} {",
+      "  fun init(${2:args}) {",
+      "    ${3:// constructor}",
+      "  }",
+      "",
+      "  fun ${4:method}(${5:args}) {",
+      "    ${6:// ...}",
+      "  }",
+      "}",
+      ""
+    ],
+    "description": "Create a class with constructor and method"
+  },
+  "Function": {
+    "prefix": "fun",
+    "body": [
+      "fun ${1:name}(${2:args}) {",
+      "  ${3:// ...}",
+      "}"
+    ],
+    "description": "Create a function"
+  },
+  "If / Else": {
+    "prefix": "if",
+    "body": [
+      "if (${1:condition}) {",
+      "  ${2:// ...}",
+      "} else {",
+      "  ${3:// ...}",
+      "}"
+    ],
+    "description": "If/else statement"
+  },
+  "While": {
+    "prefix": "while",
+    "body": [
+      "while (${1:condition}) {",
+      "  ${2:// ...}",
+      "}"
+    ],
+    "description": "While loop"
+  },
+  "Print": {
+    "prefix": "print",
+    "body": [
+      "print ${1:value};"
+    ],
+    "description": "Print statement"
+  },
+  "Time travel (undo/redo)": {
+    "prefix": "undo",
+    "body": [
+      "${1:obj}.undo();"
+    ],
+    "description": "Undo last field change on an object"
+  },
+  "Checkpoint": {
+    "prefix": "checkpoint",
+    "body": [
+      "${1:obj}.checkpoint(\"${2:name}\");"
+    ],
+    "description": "Create a named checkpoint of an object"
+  },
+  "Rollback": {
+    "prefix": "rollback",
+    "body": [
+      "${1:obj}.rollback(\"${2:name}\");"
+    ],
+    "description": "Rollback object fields to a named checkpoint"
+  }
+}

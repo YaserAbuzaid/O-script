@@ -1,0 +1,6 @@
+{
+  "files.associations": {
+    "*.os": "oscript"
+  },
+  "editor.tabSize": 2
+}
