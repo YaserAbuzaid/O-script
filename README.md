@@ -119,3 +119,17 @@ python tools/os_debugger.py
 - `examples/counter.os` — small OOP example
 - `examples/checkpoint.os` — checkpoints + rollback
 - `examples/test.os` — starter template (copy/modify)
+
+---
+
+## Maker Portfolio angle (what to say)
+
+**Problem:** Debugging OOP programs is hard because state changes are invisible.  
+**Solution:** Build an OOP language where each object logs reversible state patches.
+
+Mention:
+- lexer + parser + AST
+- environments / lexical scope
+- OOP runtime (`class`, `this`, method binding)
+- object history patches and rollback snapshots
+- trace file + debugger UI
