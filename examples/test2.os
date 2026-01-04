@@ -55,4 +55,4 @@ if (d.reachedGoal()) {
 }
 
 print "History:";
-
+print d.history();
